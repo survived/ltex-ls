@@ -72,9 +72,9 @@ data class ProgramCommentRegexs(
         "javascriptreact", "kotlin", "php", "rust", "scala", "swift", "typescript",
         "typescriptreact", "verilog",
         -> {
-          blockCommentStartRegexString = "/\\*\\*?"
-          blockCommentEndRegexString = "\\*\\*?/"
-          lineCommentRegexString = "///?"
+          blockCommentStartRegexString = "/\\*[*!]?" 
+          blockCommentEndRegexString = "\\*\\*?/" 
+          lineCommentRegexString = "//[/!]?" 
         }
         "elixir", "python" -> {
           blockCommentStartRegexString = "\"\"\""

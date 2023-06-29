@@ -27,8 +27,13 @@ class ProgramAnnotatedTextBuilderTest : CodeAnnotatedTextBuilderTest("") {
       /** Sentence 11 -
         * check */
 
+      /// Sentence 12 - check
+      //! Sentence 13 - check
+      /*! Sentence 14 - check */
+
       """.trimIndent(),
-      "\n\n\nSentence 4 -\ncheck\n\n\nSentence 10 - check\n\n\n\nSentence 11 -\ncheck\n",
+      "\n\n\nSentence 4 -\ncheck\n\n\nSentence 10 - check\n\n\n\nSentence 11 -\ncheck\n"
+      + "\n\n\nSentence 12 - check\nSentence 13 - check\n\n\nSentence 14 - check\n",
       "java",
     )
   }
